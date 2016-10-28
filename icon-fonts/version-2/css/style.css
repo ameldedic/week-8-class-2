@@ -1,3 +1,5 @@
+/*
+Connect to fonts downloaded from icomoon: */
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?5qpgrg');
@@ -9,6 +11,21 @@
     font-style: normal;
 }
 
+/*
+Any HTML element that contains class "blah-blah-chrome"
+will end up containing the Google Chrome icon: */
+.blah-blah-chrome::before {
+    font-family: 'icomoon';   
+    /* 
+    The code below belongs to characer set named UNICODE 
+    and defines Google Chrome icon. */
+    content: "\ead9"; 
+}
+
+/*
+Adding the classes for font size
+(you may come up with any name you want
+for these classes) */
 .small-size {
     font-size: 5rem;
 }
@@ -19,7 +36,16 @@
     font-size: 20rem;
 }
 
-.blah-blah-chrome::before {
-    font-family: 'icomoon';
-    content: "\ead9";
+/*
+Adding the classes for font colour
+(you may come up with any name you want
+for these classes) */
+.pink {
+    color: lightpink;
+}
+.blue {
+    color: powderblue;
+}
+.brown {
+    color: burlywood;
 }
